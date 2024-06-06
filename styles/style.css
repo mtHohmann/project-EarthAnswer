@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Pearl';
+    src: url(../fonts/pearl.ttf) format(truetype);
+}
+
+:root{
+    --font01: 'Pearl', cursive;
+    --font02: Verdana, Geneva, Tahoma, sans-serif;
+    --font03: 'Itim', cursive;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: var(--font02);
+    background-color: bisque;
+    min-height: 100vh;
+    font-size: 1em;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1{
+    font-family: var(--font01);
+    font-size: 7vw;
+    padding-top: 50px;
+}
+
+header > p{
+    font-size: 1.1em;
+    padding-bottom: 50px;
+}
+
+section{
+    font-family: var(--font03);
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-left: 40px;
+    line-height: 2.5em;
+    font-size: 3vw;
+    color: black;
+}
+
+section > p {
+    padding-top: 1em;
+    padding-bottom: 2.5em;
+}
+
+section.normal{
+    background-color: white;
+}
+
+section.img > p{
+    color: white;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.450);
+    text-shadow: 1px 2px 1px black;
+}
+
+section#img01{
+    background: url(../imgs/img01.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+
+section#img02{
+    background: url(../imgs/img02.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+
+footer{
+    background: black;
+    padding: 10px 0px;
+    text-align: center;
+    color: white;
+}
+
+header a, footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover, footer a:hover{
+    color: #5d357b;
+    transition: 0.5s;
+}
